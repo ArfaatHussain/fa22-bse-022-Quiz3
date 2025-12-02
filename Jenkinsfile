@@ -2,10 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Run Python Script') {
+        stage('Run Python Program') {
             steps {
-                echo "Running Python Program"
-                sh 'python3 app.py'
+                bat 'python app.py'
             }
         }
     }
